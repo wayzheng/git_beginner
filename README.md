@@ -98,3 +98,8 @@
 * ![alt text](image-2.png)
 * 也可以直接通过使用 `git commit -a -m "提交的理由"`
 * 也可以直接通过使用`git checkout HEAD -- files`来将这一次提交的结果转化到上一次的修改的结果
+* ![alt text](image-3.png)
+* 通过上面的图形就是可以知道就是当前的部分就是HEAD部分，所以就是可以通过使用HEAD来代替当前的分支
+* 通过上面的图也是可以知道就是当前看到的文件就是working directory，也就是工作区，要通过使用commit命令来实现提交的文件就是处于暂存区。每一个节点都是有一个独有的SHA-1 hash号码
+* ![alt text](image-4.png)
+* 通过使用`git diff 一个分支sha 一个分支sha`就是可以查看两个分支节点之间的区别，首先可以通过使用`git log --oneline`来查看简单的序列号
