@@ -130,4 +130,9 @@
     * 在对代码进行修改之后，就是可以使用`git add *或者<file_name>`来将文件提交到暂存区中 也可以使用`git add --all`来讲所有的文件都是提交到暂存区中
     * 之后就是可以通过使用 `git commit -a -m "..."`来对文件进行提交到历史版本，就是上传快照
     * 修改本地的代码仓库之后，如果要将代码仓库来进行提交到远程的代码仓库，就是可以使用 `git remote add <remote_name> <remote_repo_url>`，之后在使用`git push -u <remote_name> <local_branch_name>`来进行处理 remote_name是远程的分支，master是本地的分支,对于使用clone来进行获取的仓库代码是不需要进行使用git remote add这一个步骤的，这是因为在使用git clone这个命令的时候，已经自动配置代码库，并远程指向了这个克隆的代码仓库的git url，所以之后只要使用`git push`可以完成操作的了
-    * git config可以对git仓库进行设置
+    * git config可以对git仓库进行设置相关的配置，比如说名字和邮箱等信息，git将配置选项存储在三个单独的文件中，这可以让你将选项分配到各个代码仓库中(local)，用户(global)，或者整个系统(system)
+        1. local 通常是对某一个特定的代码仓库进行设置和配置，/.git/config 就是对于代码仓库的特定的设置
+        2. global 通常是对用户的特定的设置，配置文件放在/.gitconfig 这是存储使用--global标记设置选项的地方
+        3. 对于一个系统的设置，通常是可以通过使用 --system来进行设置，通过使用这种方式就是可以对系统范围来进行设置，文件存储在$(prefix)/ect/gitconfig
+    * 
+    
