@@ -157,7 +157,6 @@
     * 通过使用`git stash`就是可以将最近一次的一个修改进行暂存
     * 通过使用`git stash pop`可以将最近的一次暂存进行恢复并删除保存的修改    
 8.  通过使用.gitignore可以将一些文件进行忽略，之后再上传的时候就是可以对文件进行忽略，通过使用这种方式可以将一些不必要的文件给删除
-<<<<<<< HEAD
     * 使用.gitignore的时候就是需要新建一个.gitignore文件，然后再这个文件之中来添加一些需要忽略的文件，文件的具体编写的方式可以查看.gitignore文件 [.gitignore文件](./.gitignore)
 9.  通过使用`git status`和`git log`来查存储库的状况
     * 通过使用`git status`可以查看代码仓库的当前的状况，可以累出那些文件使已经暂存的staged，未追踪untracked，未暂存unstaged 通过使用`git tag`可以为git历史记录打上标签，通常是用来捕获标记版本发布的历史记录点也就是v1.01之类的，具体的语法就是`git tag <tagname>` 通过使用`git tag`可以显示出来所有的tag名称，通过使用`git tag -d <tag_name>`可以删除相应的tag名称
@@ -170,6 +169,3 @@
     * 在实际操的时候，通过使用`git clean -f`来强制将未追踪的文件进行删除，然后进行处理
     * 通过使用`git clean -di`就是可以进入交互式的操作界面来进行操作
 12. 
-=======
-    * 使用.gitignore的时候就是需要新建一个.gitignore文件，然后再这个文件之中来添加一些需要忽略的文件，文件的具体编写的方式可以查看.gitignore文件 [.gitignore文件](./.gitignore)
->>>>>>> parent of 4872590 (update files)
