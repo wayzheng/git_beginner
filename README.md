@@ -160,10 +160,12 @@
     * 使用.gitignore的时候就是需要新建一个.gitignore文件，然后再这个文件之中来添加一些需要忽略的文件，文件的具体编写的方式可以查看.gitignore文件 [.gitignore文件](./.gitignore)
 9.  通过使用`git status`和`git log`来查存储库的状况
     * 通过使用`git status`可以查看代码仓库的当前的状况，可以累出那些文件使已经暂存的staged，未追踪untracked，未暂存unstaged 通过使用`git tag`可以为git历史记录打上标签，通常是用来捕获标记版本发布的历史记录点也就是v1.01之类的，具体的语法就是`git tag <tagname>` 通过使用`git tag`可以显示出来所有的tag名称，通过使用`git tag -d <tag_name>`可以删除相应的tag名称
-    * 通过使用`git blame`就是可以显示附加到文件中特定提交者的作者的元数据
+    * 通过使用`git blame <file_name>`就是可以显示附加到文件中特定提交者的作者的元数据
 10. 通过使用`git log`来查看提交的历史记录
     * 通过使用后续的命令就是可以来实现历史记录的格式化
     * 通过使用一些后缀就是可以对文件进行格式化操作`git log --graph --decorate --oneline`
 11. 撤销更改 可以通过使用`git clean` `git revert` `git reset` `git rm`
     * `git clean`在某种程度上就是一个撤销命令，`git clean`可以看做是`git reset`和`git checkout`等其他命令的补充，其他命令对先前添加到git追踪的文件进行操作，而`git clean`则是对未追踪的文件进行操作，未追踪的文件实在代码存储库的工作目录中创建但是尚未使用`git add`命令添加到存储库跟踪索引的文件
-    
+    * 在实际操的时候，通过使用`git clean -f`来强制将未追踪的文件进行删除，然后进行处理
+    * 通过使用`git clean -di`就是可以进入交互式的操作界面来进行操作
+12. 
