@@ -144,3 +144,9 @@
         3. http `http[s]://host.xz[:port]/path/to/repo.git/`
 3. 通过使用alias来设置git命令的别名
     * 通过使用alias可以设置git命令的别名，比如可以通过使用`git config --global alias.co checkout`，之后就是可以通过使用`git co`来代替`git checkout`
+4. 通过使用git add来保留变更 具体语法就是`git add <file> <file> ...`通过使用`git add *`可以将所有的文件都提交到暂存区中
+    * 通过使用`git add`可以将变更保留到暂存区中，通过使用`git commit`可以将保留到暂存区的文件进行提交生成快照，通过使用`git reset`可以将提交到暂存区的文件或者已经生成快照的文件进行撤销操作
+    * 通过使用`git push`可以将提交的变更提交到远程的存储库进行协同合作
+5. 通过使用`git commit`来提交版本快照而不是差异
+    * 通过使用`git commit <file> <file> ...`可以对暂存区文件进行提交，生成一个快照
+    * 
