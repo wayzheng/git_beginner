@@ -134,5 +134,13 @@
         1. local 通常是对某一个特定的代码仓库进行设置和配置，/.git/config 就是对于代码仓库的特定的设置
         2. global 通常是对用户的特定的设置，配置文件放在/.gitconfig 这是存储使用--global标记设置选项的地方
         3. 对于一个系统的设置，通常是可以通过使用 --system来进行设置，通过使用这种方式就是可以对系统范围来进行设置，文件存储在$(prefix)/ect/gitconfig
-    * 
-    
+    * 通过设置color.ui就是可以设置Git颜色的主变量，通过使用`git config --global color.ui=false`就是可以设置git终端的彩色输出为禁用的状态
+2. 对远程仓库进行克隆
+    * 通过使用`git clone`命令来对远程仓库进行克隆，通过使用这种方式就是可以实现将远程仓库的地址克隆到本地的仓库中，并对这个仓库的内容进行修改和修正
+    * git克隆的语法`git clone <repo> <directory>`通过使用这个语法就是可以将远程仓库克隆到特定的文件夹中
+    * git网址协议
+        1. ssh `ssh://[user@]host.xz[:port]/path/to/repo.git/`
+        2. git `git://host.xz[:port]/path/to/repo.git/`
+        3. http `http[s]://host.xz[:port]/path/to/repo.git/`
+3. 通过使用alias来设置git命令的别名
+    * 通过使用alias可以设置git命令的别名，比如可以通过使用`git config --global alias.co checkout`，之后就是可以通过使用`git co`来代替`git checkout`
