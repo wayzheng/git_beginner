@@ -184,3 +184,5 @@
     * 通过使用`git remote rm <name>`就是可以移除与`<name>`远程仓库之间的连接
     * 如果要对当前连接的远程的代码仓库的名称进行修改就是可以使用`git remote rename <old_name> <new_name>`
     * 通过使用`git push <remote_name> <branch_name>`就是可以将对应的分支的状态传递到remote_name对应的远程代码仓库中
+    * `git fetch`是用于从远程存储库中下载内容的主要命令
+    * 通过使用`git merge`就是可以将多个提交序列合并成为一个统一的历史记录，最常见的就是将两个分支进行合并，通过使用`git merge`来进行操作
